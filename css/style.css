@@ -34,3 +34,7 @@ img{
 .active1{
 	display: block !important;
 }
+.login__undername{
+	font-family: 'Montserrat', sans-serif;
+	color: #FF4500;
+}
