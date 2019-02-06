@@ -1,0 +1,40 @@
+.login__container{
+	text-align: center;
+}
+#input{
+	border-radius: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.login__text{
+	font-size: 25px;
+	border-color: #1E90FF;
+}
+.button{
+	display: none;
+}
+.active{
+	display: block;
+}
+#admin{
+	display: none;
+
+}
+.active_admin{
+	display: block !important;
+}
+img{
+	width: 100px;
+}
+#play1{
+	display: none;
+}
+.active1{
+	display: block !important;
+}
+.login__undername{
+	font-family: 'Montserrat', sans-serif;
+	color: #FF4500;
+}
