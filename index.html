@@ -39,17 +39,16 @@
 			alert('Входите,Кирилл Александрович');
 			admin.classList.toggle('active_admin')
 
-		}
-		else if (input.value === 'guest_player'){
+		}else if (input.value === 'admin_macha') {
+			alert('Входите,Кирилл Александрович');
+			admin.classList.toggle('active_admin')
+
+		}else if (input.value === 'guest_player'){
 			alert('Входите,гость');
 			btn1.classList.toggle('active');
-			}
-
-		
-		else if (!input.value){
+			}else if (!input.value){
 			alert('Поле пустое')
-		}
-		else{
+		}else{
 			alert('Не правильный логин')
 		}
 	}
