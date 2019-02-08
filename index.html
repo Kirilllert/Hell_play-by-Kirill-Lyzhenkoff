@@ -32,7 +32,11 @@
 			<a href="https://github.com/Kirilllert">
 				<img id="img" src="images/logo_github.png">
 			</a>
-		
+		</div>
+		<div id="more">
+			<a href="https://kirilllert.github.io/calculator_By_Kirill_Lyzhenkoff/">
+				Адский калькулятор
+			</a>
 		</div>
 	</div>
 	<script type="text/javascript">
@@ -40,21 +44,23 @@
 		let btn = document.getElementById ('button');
 		let btn1 = document.getElementById('button1');
 		let admin = document.getElementById('admin');
-		let play1 = document.getElementById('play1')
+		let play1 = document.getElementById('play1');
+		let more = document.getElementById('more')
 		button.onclick = function(){
 		if (input.value === 'admin_kirill') {
 			alert('Входите,Кирилл Александрович');
 			admin.classList.toggle('active_admin')
-
 		}else if (input.value === 'admin_macha') {
 			alert('Входите,Мария Витальевна');
 			admin.classList.toggle('active_admin')
-
 		}else if (input.value === 'guest_player'){
 			alert('Входите,гость');
 			btn1.classList.toggle('active');
-			}else if (!input.value){
+		}else if (!input.value){
 			alert('Поле пустое')
+		}else if(input.value === 'more'){
+			alert('Ох,уж ты любопытный.Ну ладно,покажу еще что-то hell');
+			more.classList.toggle('more_active')
 		}else{
 			alert('Не правильный логин')
 		}
