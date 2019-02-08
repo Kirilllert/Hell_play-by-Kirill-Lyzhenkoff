@@ -1,0 +1,18 @@
+#answer1{
+	display: none;
+}
+.active{
+	display: inline-block !important;
+}
+#button1{
+	cursor: pointer;
+}
+#question2{
+	display: none;
+}
+.active_question2{
+	display: inline-block !important;
+}
+#button2{
+	cursor: pointer;
+}
