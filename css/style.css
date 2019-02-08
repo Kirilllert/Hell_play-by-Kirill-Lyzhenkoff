@@ -32,11 +32,14 @@ img{
 #play1{
 	display: none;
 }
-.active1{
+.active1,.more_active{
 	display: block !important;
 }
 .login__undername{
 	font-family: 'Montserrat', sans-serif;
 	color: #FF4500;
 	font-size: 50px;
+}
+#more{
+	display: none;
 }
