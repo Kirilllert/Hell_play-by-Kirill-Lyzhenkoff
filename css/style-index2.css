@@ -7,7 +7,7 @@
 #button1{
 	cursor: pointer;
 }
-.question2{
+#question2{
 	display: none;
 }
 .active_question2{
