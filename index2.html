@@ -17,17 +17,36 @@
 	<div id="answer1">
 		
 	</div>
-	<div>
+	<div class="question2">
+		<div id="test_question2">
+			Сколько тебе лет?
+		</div>
+		<input id="test_input2" type="" name="">
+		<div id="button2">
+			Дальше	
+		</div>
+		<div id="answer2">
 		
+		</div>
 	</div>
 	<script type="text/javascript">
 		let testInput = document.getElementById('test_input');
 		let btn1 = document.getElementById('button1');
-		let answer1 = document.getElementById('answer1')
+		let answer1 = document.getElementById('answer1');
+		let question2 = document.getElementById('question2')
+		let testInpu2 = document.getElementById('test_input2');
+		let btn2 = document.getElementById('button2');
+		let answer2 = document.getElementById('answer2');
 
-		btn1.onclick = function{
-		let answer1.textContent = input.value;
+		btn1.onclick = function() {
+		answer1.textContent = testInput.value;
 		answer1.classList.toggle('active');
+		question2.classList.toggle('active_question2')
+		}
+		btn2.onclick = function() {
+		answer2.textContent = testInput2.value;
+		answer2.classList.toggle('active');
+		question3.classList.toggle('active_question2')
 		}
 	</script>
 </body>
