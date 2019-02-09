@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+			<!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Homework</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 	<style type="text/css">
@@ -63,8 +63,11 @@
 				<div class="about1" id="city">
 					
 				</div>
-			<input id='input-test'>
-				<button id='enter-button'>Ввести</button>
+			</div>
+			<button id="button_next">Далее</button>
+			<div class="conteiner_next">
+				<input id="input_name" type="" name="" placeholder="Код для игра">
+				<button id="button_enter">Ввести</button>
 			</div>
 			
 		</div>
@@ -73,8 +76,10 @@
 			let name = document.getElementById('name');
 			let sorname = document.getElementById('sorname');
 			let city = document.getElementById('city');
-			let inputTest = document.getElementById('input-test');
-			let enterButton = document.getElementById('enter-button');
+			let btnNext = document.getElementById('button_next');
+			let conteinerNext = document.getElementById('conteiner_next');
+			let inputName = document.getElementById('input_name');
+			let buttonEnter = document.getElementById('button_enter');
 
 			button.onclick = function(){
 				let answe1=prompt('Как тебя зовут?','Иван');
@@ -85,23 +90,24 @@
 				let answe3=prompt('Сколько тебе лет?');
 				if (answe3<=7) {
 					age.textContent ='Дошкольник',answe3;
-				}
-				else if(answe3<=18) {
+				}else if(answe3<=18) {
 					age.textContent ='Школьник';
-				}
-				else if (answe3<=24) {
+				}else if (answe3<=24) {
 					age.textContent ='Cтудент';
-				}
-				else if (answe3<=65) {
+				}else if (answe3<=65) {
 					age.textContent ='Работает';
 				}
-				let answe4=prompt('Откуда ты?')	
+				let answe4=prompt('Откуда ты?');
 				}
-				enterButton.onclick = function() {
-				let anwer5 = input.value
-				if(anwer5 === 'about-me'){
-					alert('Ну теперь узнаем ,как хорошо ты меня знаешь')
-				}}
+				btnNext.onclick = function (){
+					conteinerNext.classList.toggle ('active_conteinerNext');
+				}
+				buttonEnter.onclick = function(){
+					let answe5 = inputName;
+					if (answe5 === 'more') {
+						alert('Ох,ну давай посмотрим насколько хорошо ты меня знаешь');
+					}
+				}
 		</script>
 
 </body>
