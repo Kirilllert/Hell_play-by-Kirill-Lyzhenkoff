@@ -63,14 +63,18 @@
 				<div class="about1" id="city">
 					
 				</div>
+			<input id='input-test'>
+				<button id='enter-button'>Ввести</button>
 			</div>
 			
 		</div>
 		<script type="text/javascript">
-			let btn=document.getElementById('button');
-			let name=document.getElementById('name');
-			let sorname=document.getElementById('sorname');
-			let city=document.getElementById('city');
+			let btn = document.getElementById('button');
+			let name = document.getElementById('name');
+			let sorname = document.getElementById('sorname');
+			let city = document.getElementById('city');
+			let inputTest = document.getElementById('input-test');
+			let enterButton = document.getElementById('enter-button');
 
 			button.onclick = function(){
 				let answe1=prompt('Как тебя зовут?','Иван');
@@ -91,9 +95,13 @@
 				else if (answe3<=65) {
 					age.textContent ='Работает';
 				}
-				let answe4=prompt('Откуда ты?')
-				
-			}
+				let answe4=prompt('Откуда ты?')	
+				}
+				enterButton.onclick = function() {
+				let anwer5 = input.value
+				if(anwer5 === 'about-me'){
+					alert('Ну теперь узнаем ,как хорошо ты меня знаешь')
+				}}
 		</script>
 
 </body>
