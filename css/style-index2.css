@@ -16,9 +16,9 @@
 #button2{
 	cursor: pointer;
 }
-#conteiner_next{
-	display: none;
+.conteiner_next{
+	display: none !important;
 }
-#active_conteinerNext{
+.active_conteinerNext{
 	display: inline-block !important;
 }
