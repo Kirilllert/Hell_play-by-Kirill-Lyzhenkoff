@@ -43,3 +43,16 @@ img{
 #more{
 	display: none;
 }
+body{
+	height: 100%;
+}
+.play {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.login__container{
+	height: 100%;
+}
